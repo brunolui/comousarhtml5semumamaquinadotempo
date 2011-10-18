@@ -2,6 +2,9 @@
  * @author Hakim El Hattab
  */
 
+#fundo {
+	background: url('../assets/images/bg.jpg') no-repeat;
+}
 
 /*********************************************
  * FONT-FACE DEFINITIONS
@@ -27,7 +30,7 @@ html, body {
 	font-family: 'Crimson Text', Times, 'Times New Roman', serif;
 	font-size: 36px;
 	
-	background: #fff;
+	background: #000;
 	color: #222;
 	
 	width: 100%;
@@ -38,7 +41,7 @@ html, body {
 		50% 50%, 0, 
 		50% 50%, 1000, 
 		from(rgba(245,245,245,1.0)), 
-		to(rgba(100,100,100,1.0))
+		to(rgba(0,0,0,1.0))
 	);
 
 	background-image: -moz-radial-gradient(
@@ -46,6 +49,8 @@ html, body {
 		rgba(245,245,245,1.0) 0%, 
 		rgba(100,100,100,1.0) 100%
 	);
+	
+	/*background: url('http://fanboyz.net/wp-content/uploads/2010/11/back-to-the-future-the-adventure-series-20101123102538934.jpg') no-repeat;*/
 	
 }
 
@@ -82,13 +87,13 @@ h4.inverted {
  *********************************************/
 #main {
 	position: absolute;
-	width: 800px;
-	height: 600px;
+	width: 100%;
+	height: 100%;
 	
-	left: 50%;
+	/*left: 50%;
 	top: 50%;
 	margin-left: -400px;
-	margin-top: -320px;
+	margin-top: -320px;*/
 	
 	text-align: center;
 	
@@ -102,7 +107,7 @@ h4.inverted {
 	
 	position: absolute;
 	width: 100%;
-	min-height: 600px;
+	min-height: 100%;
 	
 	-webkit-transform-style: preserve-3d;
 	
