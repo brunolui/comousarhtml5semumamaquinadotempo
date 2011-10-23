@@ -17,14 +17,35 @@
     <title>Presentation</title>
 
     <meta charset='utf-8'>
-    <script
-      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+    <script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
   </head>
   
   <style>
-    /* Your individual styles here, or just use inline styles if that’s
-       what you want. */
-    
+    body {
+		margin: 0;
+		padding: 0;
+
+		display: block !important;
+
+		height: 100%;
+		min-height: 740px;
+
+		overflow-x: hidden;
+		overflow-y: auto;
+
+		color: #fff;
+
+		background-image: -moz-radial-gradient(50% 30% 90deg, circle, #b1dfff 0%, #0c54ab 600px) !important;
+		background-image: -webkit-gradient(radial, 50% 50%, 200, 50% 50%, 600, from(#b1dfff), to(#0c54ab)) !important;
+		background-color: #2eabff !important;
+		background-attachment: fixed !important;
+
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	#tudo {
+		background: url('Untitled-1.jpg');
+	}
     
   </style>
 
@@ -34,23 +55,26 @@
       
       <!-- Your slides (<article>s) go here. Delete or comment out the
            slides below. -->
-        
-        
-      
-      <article class='biglogo'>
-      </article>
 
-      <article>
+      <article class='nobackground'>
         <h1>
-          Title Goes Here Up
+          Como usar HTML5 sem 
           <br>
-          To Two Lines
+          uma máquina do tempo
         </h1>
         <p>
-          Sergey Brin
+          Zeno Rocha
           <br>
-          May 10, 2011
+          5 de novembro, 2011
         </p>
+      </article>
+
+      <article class='nobackground'>
+        <h3>HTML5 = CSS 3 + JS</h3>
+      </article>
+
+	  <article class='nobackground' id='tudo'>
+        <h3>HTML5 = CSS 3 + JS</h3>
       </article>
       
       <article>
