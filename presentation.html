@@ -35,16 +35,28 @@
 
 		color: #fff;
 
-		background-image: -moz-radial-gradient(50% 30% 90deg, circle, #b1dfff 0%, #0c54ab 600px) !important;
+		background-color:#ccc !important;
+		background: -moz-radial-gradient(#999, #000) !important;		
+		background: -webkit-radial-gradient(#999, #000) !important;
+
+		/*background-image: -moz-radial-gradient(50% 30% 90deg, circle, #b1dfff 0%, #0c54ab 600px) !important;
 		background-image: -webkit-gradient(radial, 50% 50%, 200, 50% 50%, 600, from(#b1dfff), to(#0c54ab)) !important;
 		background-color: #2eabff !important;
-		background-attachment: fixed !important;
+		background-attachment: fixed !important;*/
 
 		-webkit-font-smoothing: antialiased;
 	}
 	
 	#tudo {
 		background: url('Untitled-1.jpg');
+	}
+	
+	#capa {
+		background: url('img/capa-01.jpg');
+	}
+	
+	.slides > article {
+		border: 0 !important;
 	}
     
   </style>
@@ -56,8 +68,8 @@
       <!-- Your slides (<article>s) go here. Delete or comment out the
            slides below. -->
 
-      <article class='nobackground'>
-        <h1>
+      <article class='nobackground' id='capa'>
+        <!-- <h1>
           Como usar HTML5 sem 
           <br>
           uma máquina do tempo
@@ -66,7 +78,7 @@
           Zeno Rocha
           <br>
           5 de novembro, 2011
-        </p>
+        </p> -->
       </article>
 
       <article class='nobackground'>
