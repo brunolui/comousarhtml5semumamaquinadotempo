@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 
-<!--
-  Google HTML5 slide template
-
-  Authors: Luke Mahé (code)
-           Marcin Wichary (code and design)
-           
-           Dominic Mazzoni (browser compatibility)
-           Charles Chen (ChromeVox support)
-
-  URL: http://code.google.com/p/html5slides/
--->
-
 <html>
   <head>
-    <title>Presentation</title>
+    
+    <title>Como usar HTML5 sem uma máquina do tempo</title>
 
-    <meta charset='utf-8'>
-    <script src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+    <meta charset="utf-8">
+    <meta name="author" content="Zeno Rocha" />
+    <meta name="description" content="Palestra sobre HTML5 apresentada no dia 05 de novembro de 2011" />
+    
+    <script src="js/slides.js"></script>
   </head>
   
   <style>
@@ -35,9 +27,10 @@
 
 		color: #fff;
 
-		background-color:#ccc !important;
+		background:#000 !important;
+		/*background-color:#ccc !important;
 		background: -moz-radial-gradient(#999, #000) !important;		
-		background: -webkit-radial-gradient(#999, #000) !important;
+		background: -webkit-radial-gradient(#999, #000) !important;*/
 
 		/*background-image: -moz-radial-gradient(50% 30% 90deg, circle, #b1dfff 0%, #0c54ab 600px) !important;
 		background-image: -webkit-gradient(radial, 50% 50%, 200, 50% 50%, 600, from(#b1dfff), to(#0c54ab)) !important;
@@ -47,45 +40,56 @@
 		-webkit-font-smoothing: antialiased;
 	}
 	
-	#tudo {
-		background: url('Untitled-1.jpg');
-	}
+	#tudo { background: url("Untitled-1.jpg"); }
+	#capa { background: url("img/capa-01.jpg"); }
+	#quem-e { background: url("img/quem-e.jpg"); }
+	#o-que-e { background: url("img/bg-o-que-e.jpg"); }
 	
-	#capa {
-		background: url('img/capa-01.jpg');
-	}
 	
 	.slides > article {
 		border: 0 !important;
 	}
+	
+	.build, .build li {
+		list-style: none;
+	}
+	
+	.ico-html {
+		margin: 200px 0 0 250px;
+	}
+	
+	.ico-css {
+		margin: 200px 0 0 100px;
+	}
+	
+	.ico-js {
+		margin: 200px 0 0 100px;
+	}
     
   </style>
 
-  <body style='display: none'>
+  <body style="display: none">
 
-    <section class='slides layout-regular template-io2011'>
+    <section class="slides layout-regular template-io2011">
       
       <!-- Your slides (<article>s) go here. Delete or comment out the
            slides below. -->
 
-      <article class='nobackground' id='capa'>
-        <!-- <h1>
-          Como usar HTML5 sem 
-          <br>
-          uma máquina do tempo
-        </h1>
-        <p>
-          Zeno Rocha
-          <br>
-          5 de novembro, 2011
-        </p> -->
+      <article class="nobackground" id="capa"></article>
+      
+	  <article class="nobackground" id="quem-e"></article>
+
+      <article class="nobackground" id="o-que-e">
+      
+      	<div class="build">
+          <img class="ico-html" src="img/html.png" alt="HTML">
+          <img class="ico-css" src="img/css.png" alt="CSS">
+          <img class="ico-js" src="img/js.png" alt="JS">
+        </div>
+        
       </article>
 
-      <article class='nobackground'>
-        <h3>HTML5 = CSS 3 + JS</h3>
-      </article>
-
-	  <article class='nobackground' id='tudo'>
+	  <article class="nobackground" id="tudo">
         <h3>HTML5 = CSS 3 + JS</h3>
       </article>
       
@@ -114,7 +118,7 @@
         </p>
       </article>
 
-      <article class='smaller'>
+      <article class="smaller">
         <h3>
           Simple slide with header and text (small font)
         </h3>
@@ -146,7 +150,7 @@
             presentation template effectively
           </li>
           <li>
-            At all times strive to maintain Google's corporate look and feel
+            At all times strive to maintain Google"s corporate look and feel
           </li>
         </ul>
       </article>
@@ -169,11 +173,11 @@
 
         <div class="build">
           <p>Any element with child nodes can build.</p>
-          <p>It doesn't have to be a list.</p>
+          <p>It doesn"t have to be a list.</p>
         </div>
       </article>
 
-      <article class='smaller'>
+      <article class="smaller">
         <h3>
           Slide with bullet points (small font)
         </h3>
@@ -187,7 +191,7 @@
             Instructions are provided to assist you in using this
             presentation template effectively
           <li>
-            At all times strive to maintain Google's corporate look and feel
+            At all times strive to maintain Google"s corporate look and feel
         </ul>
       </article>
 
@@ -215,7 +219,7 @@
         </table>
       </article>
       
-      <article class='smaller'>
+      <article class="smaller">
         <h3>
           Slide with a table (smaller text)
         </h3>
@@ -245,17 +249,17 @@
         </h3>
         <ul>
           <li>
-            <span class='red'>class="red"</span>
+            <span class="red">class="red"</span>
           <li>
-            <span class='blue'>class="blue"</span>
+            <span class="blue">class="blue"</span>
           <li>
-            <span class='green'>class="green"</span>
+            <span class="green">class="green"</span>
           <li>
-            <span class='yellow'>class="yellow"</span>
+            <span class="yellow">class="yellow"</span>
           <li>
-            <span class='black'>class="black"</span>
+            <span class="black">class="black"</span>
           <li>
-            <span class='white'>class="white"</span>
+            <span class="white">class="white"</span>
           <li>
             <b>bold</b> and <i>italic</i>
         </ul>
@@ -272,9 +276,9 @@
           Slide with an image
         </h3>
         <p>
-          <img style='height: 500px' src='images/example-graph.png'>
+          <img style="height: 500px" src="images/example-graph.png">
         </p>
-        <div class='source'>
+        <div class="source">
           Source: Sergey Brin
         </div>
       </article>
@@ -284,21 +288,21 @@
           Slide with an image (centered)
         </h3>
         <p>
-          <img class='centered' style='height: 500px' src='images/example-graph.png'>
+          <img class="centered" style="height: 500px" src="images/example-graph.png">
         </p>
-        <div class='source'>
+        <div class="source">
           Source: Larry Page
         </div>
       </article>
 
-      <article class='fill'>
+      <article class="fill">
         <h3>
           Image filling the slide (with optional header)
         </h3>
         <p>
-          <img src='images/example-cat.jpg'>
+          <img src="images/example-cat.jpg">
         </p>
-        <div class='source white'>
+        <div class="source white">
           Source: Eric Schmidt
         </div>
       </article>
@@ -309,43 +313,43 @@
         </h3>
         <section>
         <pre>
-&lt;script type='text/javascript'&gt;
+&lt;script type="text/javascript"&gt;
   // Say hello world until the user starts questioning
   // the meaningfulness of their existence.
   function helloWorld(world) {
     for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
+      alert("Hello " + String(world));
     }
   }
 &lt;/script&gt;
 &lt;style&gt;
   p { color: pink }
   b { color: blue }
-  u { color: 'umber' }
+  u { color: "umber" }
 &lt;/style&gt;
 </pre>
         </section>
       </article>
       
-      <article class='smaller'>
+      <article class="smaller">
         <h3>
           This slide has some code (small font)
         </h3>
         <section>
         <pre>
-&lt;script type='text/javascript'&gt;
+&lt;script type="text/javascript"&gt;
   // Say hello world until the user starts questioning
   // the meaningfulness of their existence.
   function helloWorld(world) {
     for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
+      alert("Hello " + String(world));
     }
   }
 &lt;/script&gt;
 &lt;style&gt;
   p { color: pink }
   b { color: blue }
-  u { color: 'umber' }
+  u { color: "umber" }
 &lt;/style&gt;
 </pre>
         </section>
@@ -355,38 +359,38 @@
         <q>
           The best way to predict the future is to invent it.
         </q>
-        <div class='author'>
+        <div class="author">
           Alan Kay
         </div>
       </article>
       
-      <article class='smaller'>
+      <article class="smaller">
         <q>
           A distributed system is one in which the failure of a computer 
           you didn’t even know existed can render your own computer unusable.
         </q>
-        <div class='author'>
+        <div class="author">
           Leslie Lamport
         </div>
       </article>
       
-      <article class='nobackground'>
+      <article class="nobackground">
         <h3>
           A slide with an embed + title
         </h3>
         
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+        <iframe src="http://www.google.com/doodle4google/history.html"></iframe>
       </article>
 
-      <article class='nobackground'>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+      <article class="nobackground">
+        <iframe src="http://www.google.com/doodle4google/history.html"></iframe>
       </article>
 
-      <article class='fill'>
+      <article class="fill">
         <h3>
           Full-slide embed with (optional) slide title on top
         </h3>
-        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+        <iframe src="http://www.google.com/doodle4google/history.html"></iframe>
       </article>
       
       <article>
@@ -396,7 +400,7 @@
         
         <ul>
           <li>
-            <a href='http://www.google.com'>google.com</a>
+            <a href="http://www.google.com">google.com</a>
         </ul>
       </article>
 
