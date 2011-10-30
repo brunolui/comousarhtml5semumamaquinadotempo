@@ -11,6 +11,7 @@
 */
 
 var PERMANENT_URL_PREFIX = 'http://html5slides.googlecode.com/svn/trunk/';
+var MY_PERMANENT_URL_PREFIX = 'http://labs.zenorocha.com/';
 
 var SLIDE_CLASSES = ['far-past', 'past', 'current', 'next', 'far-next'];
 
@@ -552,13 +553,13 @@ function addFontStyle() {
   document.body.appendChild(el);
 };
 
-function addGeneralStyle() {
+function addGeneralStyle() {	
   var el = document.createElement('link');
   el.rel = 'stylesheet';
   el.type = 'text/css';
-  el.href = PERMANENT_URL_PREFIX + 'styles.css';
+  el.href = MY_PERMANENT_URL_PREFIX + 'styles.css';
   document.body.appendChild(el);
-  
+
   var el = document.createElement('meta');
   el.name = 'viewport';
   el.content = 'width=1100,height=750';

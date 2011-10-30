@@ -1,3 +1,62 @@
-#fundo {
-	background: url('../assets/images/bg.jpg') no-repeat;
+body {
+	margin: 0;
+	padding: 0;
+
+	display: block !important;
+
+	height: 100%;
+	min-height: 740px;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	color: #fff;
+
+	background:#000 !important;
+	/*background-color:#ccc !important;
+	background: -moz-radial-gradient(#999, #000) !important;		
+	background: -webkit-radial-gradient(#999, #000) !important;*/
+
+	/*background-image: -moz-radial-gradient(50% 30% 90deg, circle, #b1dfff 0%, #0c54ab 600px) !important;
+	background-image: -webkit-gradient(radial, 50% 50%, 200, 50% 50%, 600, from(#b1dfff), to(#0c54ab)) !important;
+	background-color: #2eabff !important;
+	background-attachment: fixed !important;*/
+
+	-webkit-font-smoothing: antialiased;
+}
+
+#tudo { background: url("Untitled-1.jpg"); }
+#capa { background: url("img/capa-01.jpg"); }
+#quem-e { background: url("img/quem-e.jpg"); }
+#o-que-e { background: url("img/bg-o-que-e.jpg"); }
+
+
+.slides > article {
+	border: 0 !important;
+	/*-moz-box-shadow: inset 0px 0px 30px 30px #000000 !important;
+	-webkit-box-shadow: inset 0px 0px 30px 30px #000000 !important;
+	-o-box-shadow: inset 0px 0px 30px 30px #000000 !important;
+	box-shadow: inset 0px 0px 30px 30px #000000 !important;*/
+}
+
+.build, .build li {
+	list-style: none;
+}
+
+.ico-html {
+	margin: 200px 0 0 250px;
+}
+
+.ico-css {
+	margin: 200px 0 0 100px;
+}
+
+.ico-js {
+	margin: 200px 0 0 100px;
+}
+
+article.fill h3 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
