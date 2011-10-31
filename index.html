@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-BR">
   <head>
     
     <title>Como usar HTML5 sem uma máquina do tempo</title>
@@ -110,6 +110,10 @@
 		-webkit-font-smoothing: antialiased;
 	}
 	
+	p, li {
+		color: #fff !important;
+	}
+	
 	@font-face {
 	    font-family: 'GothamUltraRegular';
 	    src: url('font/gotham-ultra-webfont.eot');
@@ -143,14 +147,19 @@
 	#w3c-suspende { background: url("img/suissa/5-w3c-suspende.jpg"); }	
 	#indexeddb { background: url("img/suissa/6-indexeddb.jpg"); }		
 	#polyfill { background: url("img/polyfill.jpg"); }	
-	#instrucoes { background: url("img/instrucoes.jpg"); }
-	#ontem { background: url("img/ontem.jpg"); }	
+	#instrucoes { background: url("img/instrucoes2.jpg"); }
+	#ontem { background: url("img/ontem.jpg"); }
 	#hoje { background: url("img/hoje.jpg"); }	
-	#threejs { background: url("img/threejs.png"); }		
-	
+	#threejs { background: url("img/threejs.png"); }
 	#wormz, #skin { background: url("img/fundo.png"); }	
+	#quemsoueu { background-image: url("img/quemsoueu.png"); }	
+	#html5shiv { background: url("img/html5shiv.png"); }
+	#raphaeljs { background: url("img/raphael.png"); }		
+	#videojs { background: url("img/videojs.png"); }		
+	#popcornjs { background: url("img/popcornjs.png"); }	
+	#buzz { background: url("img/buzz.png"); }			
 	
-	#semantica, #armazenamento, #acesso, #conectividade, #multimedia, #graficos, #css3, #wormz, #skin {
+	#semantica, #armazenamento, #acesso, #conectividade, #multimedia, #graficos, #css3, #wormz, #skin, #capa, #quemsoueu, #instrucoes {
 		-moz-box-shadow: inset 0px 0px 250px #000000 !important;
 		-webkit-box-shadow: inset 0px 0px 250px #000000 !important;
 		-o-box-shadow: inset 0px 0px 250px #000000 !important;
@@ -158,12 +167,14 @@
 	}		
 	
 	#semantica { background: #b73751; }
+	#quemsoueu { background-color: #72a943; }
 	#armazenamento { background: #5ccedb; }
 	#acesso { background: #f7e047; }
 	#conectividade { background: #a3c4f2; }
 	#multimedia { background: #f5a35a; }
 	#graficos {	background: #85b737; }
-	#css3 {	background: #9a37b7; }
+	#css3 {	background: #9a37b7; }	
+
 
 	.slides > article {
 		border: 0 !important;
@@ -177,6 +188,7 @@
 		font-family: 'GothamUltraRegular' !important;
 		color: #fff !important;
 		font-size: 70px !important;
+		line-height: 70px !important;
 		text-align: center !important;
 		text-transform: uppercase;
 		margin: 50px 0 0 0 !important;
@@ -242,22 +254,94 @@
 	
 	.doctype-xhtml {
 		font-family: 'GothamUltraRegular' !important;		
-		font-size: 80px !important;
+		font-size: 75px !important;
 		padding: 10px;
-		line-height: 80px;
+		line-height: 75px;
 		color: #fff !important;
 	}
 	
 	.doctype-html {
 		font-family: 'GothamUltraRegular' !important;		
 		font-size: 40px !important;
-		padding: 10px;
-		line-height: 40px;
 		color: #fff !important;
+		text-align: center;
+		padding-top: 260px;
 	}
 	
-	#graficos li, #graficos p {
-		color: #fff !important;
+	#algumasnovidades {
+		margin: 10px 0 20px 0 !important;
+	}
+	
+	[required] {
+	    border-color: #88a;
+	    -webkit-box-shadow: 0 0 3px rgba(0, 0, 255, .5);
+		width: 320px;
+		height: 30px;
+		font-size: 30px;
+	}
+	
+	input[type=submit] {
+		margin: 0 0 0 10px;
+		height: 30px;
+		font-size: 30px;
+	}
+	
+	input[type=number] {
+		height: 30px;
+		font-size: 30px;
+	}
+	
+	input[type=search] {
+		height: 30px;
+		font-size: 30px;
+	}
+	
+	.snippet {
+		background: rgba(0, 0, 0, .4);
+		padding: .3em .5em;
+		margin: 20px 0 0 0;
+		border: 2px solid rgba(255, 255, 255, .1);
+		-webkit-box-shadow: .1em .1em .5em black inset;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: #fff;
+		border-radius: 10px;
+		font-size: 22px;
+	}
+	
+	#canvas {
+		border: 3px solid #fff !important;
+	}
+	
+	#canvas h1 {
+		position: absolute;
+		margin-left: 100px;
+		top: 30px;
+		left: 300px;
+	}
+	
+	#canvas ul {
+		position: absolute;
+		top: 200px;
+	}
+	
+	#audio-clip {
+		margin: 30px auto;
+		display: block;
+	}
+	
+	#audio-atts {
+		margin: 15px 0 0 50px;
+	}
+	
+	#audio-atributes {
+		margin: 20px 0 0 0;
+	}
+	
+	video {
+		margin: 0 auto;
+		display: block;
 	}
 	
 	</style>
@@ -265,8 +349,12 @@
     <section class="slides layout-regular template-io2011">
 
 		<article class="nobackground" id="capa"></article>
-		<article class="nobackground" id="quem-e"></article>
-		<article class="nobackground" id="instrucoes"></article>
+
+		<article class="nobackground" id="quemsoueu"></article>
+
+		<!-- <article class="nobackground" id="quem-e"></article> -->
+		
+		<article class="nobackground" id="instrucoes"></article>		
 		<article class="nobackground" id="comousar">
 		<!-- <article class="fill">
 			<iframe src="http://github.com/zenorocha/comousarhtml5semumaquinadotempo"></iframe> -->
@@ -299,17 +387,51 @@
 		</article>
 		
 		<article class="nobackground" id="semantica">
-			<p class="doctype-xhtml">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
-			</p>
+			<p class="doctype-xhtml">&lt;!DOCTYPE html PUBLIC "-//W3C<br>//DTD XHTML 1.0 Transitional//EN" "http://www.w3<br>.org/TR/xhtml1/<br>DTD/xhtml1-transitional.dtd"&gt;</p>
 		</article>
 		
 		<article class="nobackground" id="semantica">
-			<p class="doctype-html">&lt;!DOCTYPE html&gt;
-			</p>
-		</article>		
+			<p class="doctype-html">&lt;!DOCTYPE html&gt;</p>
+		</article>
 
 		<article class="nobackground" id="ontem"></article>		
 		<article class="nobackground" id="hoje"></article>				
+		
+		<article class="nobackground" id="semantica">
+			<h1 id="algumasnovidades">Novidades para aplicações</h1>
+			<p><progress>carregando...</progress></p>			
+			<textarea class="snippet" spellcheck="false" rows="1">&lt;progress&gt; carregando... &lt;/progress&gt;</textarea>			
+			<p><progress value="75" max="100">3/4 carregado</progress></p>
+			<textarea class="snippet" spellcheck="false" rows="1">&lt;progress value="75" max="100"&gt; 3/4 carregado &lt;/progress&gt;</textarea>		
+			<p><meter value="91" min="0" max="100" low="40" high="90" optimum="100"></meter></p>							
+			<textarea class="snippet" spellcheck="false" rows="2">&lt;meter value="91" min="0" max="100" low="40" high="90" optimum="100"&lt;/meter&gt;</textarea>
+		</article>
+		
+		<article class="nobackground" id="semantica">
+			<form>
+				<h1 id="algumasnovidades">Novidades para formulários</h1>
+				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="text" required /&gt;</textarea>
+				<p><input type="text" required /><input type="submit" value="Submeter" /></p>
+				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="number" step="1" min="-5" max="10" /&gt;</textarea>
+				<p><input type="number" step="1" min="-5" max="10" value="0" /></p>
+				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="search" placeholder="Pesquisar..." /&gt;</textarea>
+				<p><input type="search" results="10" placeholder="Pesquisar..." /></p>
+			</form>
+		</article>
+		
+		<article class="nobackground" id="semantica">
+			<h1 id="algumasnovidades">Mas peraí...</h1>
+			<!-- <p>Como os navegadores antigos interpretam essas novas tags?</p> -->
+			<p>Para navegadores antigos uma tag &lt;header&gt; tem o mesmo valor semântico que uma tag &lt;zeno&gt;</p>
+			<p>Ou seja, nenhum. Esses elementos precisam ser renderizados como blocos.</p>
+			<p>No JavaScript:</p>
+			<textarea class="snippet" spellcheck="false" rows="1">document.createElement("header");</textarea>
+			<p>No CSS:</p>
+			<textarea class="snippet" spellcheck="false" rows="1">header { display: block; }</textarea>
+		</article>
+		
+		
+		<article class="nobackground" id="html5shiv"></article>
 	
 		<article class="nobackground" id="armazenamento">
 			<h1>Armazenamento</h1>
@@ -329,13 +451,15 @@
 			<iframe src="http://labs.zenorocha.com/file"></iframe>
 		</article> -->
 		
-		<article class="fill">
-			<iframe src="http://www.ubuntu.com/tour/"></iframe>
+		<article class="nobackground" id="skin">
+			<h1>Ubuntu</h1>
+			<a href="http://www.ubuntu.com/tour/" target="blank" class="btn"><span>DEMO</span></a>			
 		</article>
 		
-		<article class="fill">
-			<iframe src="http://www.htmlfivewow.com/demos/terminal/terminal.html"></iframe>
-		</article>		
+		<article class="nobackground" id="skin">
+			<h1>Terminal</h1>
+			<a href="http://www.htmlfivewow.com/demos/terminal/terminal.html" target="blank" class="btn"><span>DEMO</span></a>			
+		</article>
 	
 		<article>
 			<h3 class="acesso">Input de áudio</h3>
@@ -348,10 +472,10 @@
 			<p>Procurando sua localização: <span id="status">checando...</span></p>
 		</article>
 
-		<article id="geo">
+		<!-- <article id="geo">
 			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 			<script type="text/javascript" src="js/geolocation.js"></script>
-		</article>
+		</article> -->
 	
 		<article class="nobackground" id="conectividade">
 			<h1>Conectividade</h1>
@@ -362,37 +486,107 @@
 			<h1>Multimídia</h1>
 			<img src="img/categorias/multimedia.png" alt="Multimedia">
 		</article>
+		
+		<article class="nobackground" id="multimedia">
+			<h1 id="algumasnovidades">Áudio</h1>
+			<audio id="audio-clip" controls>
+               	<source src="src/audio.mp3" type="audio/mpeg">
+                <source src="src/audio.ogg" type="audio/ogg">
+                Seu navegador não suporta a tag &lt;audio&gt;
+            </audio>
+			<textarea class="snippet" spellcheck="false" rows="5">&lt;audio controls&gt;
+    &lt;source src="src/audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="src/audio.ogg" type="audio/ogg"&gt;
+    Seu navegador não suporta a tag áudio
+&lt;/audio&gt;</textarea>
+			<div id="audio-atributes" class="build">			
+				<p>E ainda mais atributos como:</p>
+				<ul id="audio-atts">
+					<li>autoplay</li>
+					<li>loop</li>
+					<li>preload</li>
+				</ul>
+			</div>
+		</article>
+		
+		<article class="nobackground" id="buzz">
+			<!-- http://buzz.jaysalvat.com/ 
+			http://kolber.github.com/audiojs/ -->
+		</article>
+		
+		<article class="nobackground" id="multimedia">
+			<h1 id="algumasnovidades">Vídeo</h1>
+		
+			<video width="390" id="clip" controls>
+				<source src="src/chrome_japan.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+                <source src="src/chrome_japan.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                <source src="src/chrome_japan.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+               	Seu navegador não suporta a tag vídeo
+			</video>
+	
+			<textarea class="snippet" spellcheck="false" rows="5">&lt;video controls&gt;
+    &lt;source src="src/chrome_japan.webm" type="video/webm;"&gt;
+    &lt;source src="src/chrome_japan.mp4" type="video/mp4;"&gt;
+    &lt;source src="src/chrome_japan.ogv" type="video/ogg;"&gt;
+&lt;/video&gt;</textarea>
+
+			<div id="audio-atributes" class="build">			
+				<p>E ainda mais atributos como:</p>
+				<ul id="audio-atts">
+					<li>poster</li>
+					<li>muted</li>
+				</ul>
+			</div>
+		</article>
+		
+		<article class="nobackground" id="videojs">
+			<!-- http://videojs.com/ -->
+		</article>
+		
+		<article class="nobackground" id="popcornjs">
+			<!-- http://popcornjs.org/ -->
+		</article>		
 	
 		<article class="nobackground" id="graficos">
 			<h1>Gráficos</h1>
 			<img src="img/categorias/graficos.png" alt="Gráficos">
 		</article>
 
-		<article class="fill">
+		<!-- <article class="fill">
 			<iframe src="http://www.nevermindthebullets.com/"></iframe>
-		</article>
+		</article> -->
 
 		<article class="nobackground" id="graficos">
 			<h1>SVG</h1>
 		</article>
 		
-		<article class="fill">
-			<iframe src="http://www.w3.org/2010/Talks/04-schepers-www2010/themepark.svg"></iframe>
-		</article>		
-		
-		<article class="fill">
-			<iframe src="http://raphaeljs.com/"></iframe>
+		<article class="nobackground" id="skin">
+			<h1>Park</h1>
+			<a href="http://www.w3.org/2010/Talks/04-schepers-www2010/themepark.svg" target="blank" class="btn"><span>DEMO</span></a>			
 		</article>
 		
+		<article class="nobackground" id="raphaeljs">
+			<!-- <iframe src="http://raphaeljs.com/"></iframe> -->
+		</article>
 		
-		
-		<article class="nobackground" id="graficos">
+		<!-- <article class="nobackground" id="graficos">
 			<h1>Canvas</h1>
-		</article>
+		</article> -->
 		
-		<article class="fill">
+		<article class="fill" id="canvas">
+			<h1>Canvas</h1>
+			<ul class="build">
+				<li>Criação de gráficos
+				<textarea class="snippet" spellcheck="false" rows="1">&lt;canvas id="meuDesenho" width="500" height="500"&gt;</textarea>
+				<textarea class="snippet" spellcheck="false" rows="2">var canvas = document.getElementById("meuDesenho"); canvas = canvas.getContext("2d");</textarea></li>
+	        </ul>
 			<iframe src="http://www.spielzeugz.de/html5/space-noodles/"></iframe>
 		</article>
+		
+		<!-- <article class="fill" id="canvas">
+			<h1>Canvas</h1>
+			<iframe src="http://www.spielzeugz.de/html5/liquid-particles-3D/"></iframe>
+		</article> -->
 		
 		<article class="nobackground" id="wormz">
 			<h1>Wormz</h1>
@@ -404,14 +598,10 @@
 			<ul class="build">
 				<li>3D + Browser = Wooow!</li>
 				<li>JavaScript + GPU = Wooow²!</li>
+				<li>Utiliza a tag <strong>&lt;canvas&gt;</strong> só que com um outro contexto
+				<textarea class="snippet" spellcheck="false" rows="1">&lt;canvas id="meuDesenho" width="500" height="500"&gt;</textarea>
+				<textarea class="snippet" spellcheck="false" rows="2">var canvas = document.getElementById("meuDesenho"); canvas = canvas.getContext("experimental-webgl");</textarea></li>
 	        </ul>
-		</article>
-		
-		<article class="nobackground" id="graficos">
-			<h1>WebGL</h1>
-			<p>Utiliza a tag &lt;canvas&gt; só que com um outro contexto</p>
-			<pre>&lt;canvas id="glcanvas" width="640" height="480"&gt;</pre>
-			<pre>var canvas = document.getElementById("glcanvas")<br>canvas = canvas.getContext("experimental-webgl");</pre>			
 		</article>
 		
 		<article class="nobackground" id="threejs">
@@ -443,7 +633,20 @@
 	  <article class="nobackground" id="css3">
 		<h1>CSS</h1>
 		<img src="img/categorias/css3.png" alt="CSS3">
-	  </article>	
+	  </article>
+	
+		<article class="nobackground" id="skin">
+			<h1>Expressive Web</h1>
+			<a href="http://beta.theexpressiveweb.com/" target="blank" class="btn"><span>DEMO</span></a>			
+		</article>	
+		
+		<article class="fill">
+			<iframe src="http://css3pie.com/"></iframe>
+		</article>
+		
+		<article class="fill">
+			<iframe src="http://selectivizr.com/"></iframe>
+		</article>
 
       <article>
         <h3>
@@ -758,10 +961,6 @@
 	  <!-- <article class="fill">
         <iframe src="http://diveintohtml5.com.br"></iframe> -->
       </article>
-
-		<article class="fill">
-			<iframe src="http://beta.theexpressiveweb.com/"></iframe>
-		</article>
 
       <article class="nobackground" id="facebook">
 	  <!-- <article class="fill">
