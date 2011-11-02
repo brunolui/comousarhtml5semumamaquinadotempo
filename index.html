@@ -133,31 +133,41 @@
 	#w3c { background: url("img/w3c.jpg"); }
 	#aceite { background: url("img/aceite.jpg"); }
 	#wow { background: url("img/wow.jpg"); }
-	#zenorocha { background: url("img/zenorocha.png"); }
-	#blog { background: url("img/blog.png"); }
-	#diveinto { background: url("img/diveinto.png"); }			
+	#diveinto { background: url("img/diveinto.jpg"); }			
 	#facebook { background: url("img/facebook.png"); }					
 	#comousar { background: url("img/comousar.png"); }
 	#w3c-talvez { background: url("img/w3c-talvez.jpg"); }
 	#moda { background: url("img/moda.jpg"); }
-	#eraumavez { background: url("img/suissa/1-eraumavez.jpg"); }
-	#lancamento-html5 { background: url("img/suissa/2-lancamento-html5.jpg"); }	
-	#aula { background: url("img/suissa/3-aula.jpg"); }	
-	#estudou { background: url("img/suissa/4-estudou.jpg"); }
-	#w3c-suspende { background: url("img/suissa/5-w3c-suspende.jpg"); }	
-	#indexeddb { background: url("img/suissa/6-indexeddb.jpg"); }		
+	#eraumavez { background: url("img/suissa/1-eraumavez.jpg"); border: 3px solid #fff !important; }
+	#lancamento-html5 { background: url("img/suissa/2-lancamento-html5.jpg"); border: 3px solid #fff !important; }	
+	#aula { background: url("img/suissa/3-aula.jpg"); border: 3px solid #fff !important; }	
+	#estudou { background: url("img/suissa/4-estudou.jpg"); border: 3px solid #fff !important; }
+	#w3c-suspende { background: url("img/suissa/5-w3c-suspende.jpg"); border: 3px solid #fff !important; }	
+	#indexeddb { background: url("img/suissa/6-indexeddb.jpg"); border: 3px solid #fff !important; }		
 	#polyfill { background: url("img/polyfill.jpg"); }	
 	#instrucoes { background: url("img/instrucoes2.jpg"); }
-	#ontem { background: url("img/ontem.jpg"); }
-	#hoje { background: url("img/hoje.jpg"); }	
-	#threejs { background: url("img/threejs.png"); }
+	#ontem { background: url("img/ontem2.jpg"); }
+	#hoje { background: url("img/hoje2.jpg"); }	
+	#threejs { background: url("img/threejs.jpg"); border: 3px solid #fff !important; }
 	#wormz, #skin { background: url("img/fundo.png"); }	
 	#quemsoueu { background-image: url("img/quemsoueu.png"); }	
 	#html5shiv { background: url("img/html5shiv.png"); }
-	#raphaeljs { background: url("img/raphael.png"); }		
-	#videojs { background: url("img/videojs.png"); }		
-	#popcornjs { background: url("img/popcornjs.png"); }	
-	#buzz { background: url("img/buzz.png"); }			
+	#raphaeljs { background: url("img/raphael.jpg"); }		
+	#videojs { background: url("img/videojs.jpg"); }		
+	#popcornjs { background: url("img/popcornjs.jpg"); }	
+	#buzz { background: url("img/buzz.jpg"); }		
+	#audiojs { background: url("img/audiojs.jpg"); }		
+	#doismiledoze { background: url("img/2012.jpg"); }	
+	#maujorsvg { background: url("img/maujorsvg.jpg"); }
+	#learningthreejs { background: url("img/learningthreejs.jpg"); }
+	#polyfill-list { background: url("img/polyfill.jpg"); }
+	#css3pie { background: url("img/css3pie.jpg"); }
+	#selectvizr { background: url("img/selectvizr.jpg"); }
+	#modernizr { background: url("img/modernizr.jpg"); }
+	#modernizr-pt { background: url("img/modernizr-pt.jpg"); }
+
+	#github-comousar { background: url("img/github-comousar.jpg"); }
+	#github-diveinto { background: url("img/github-diveinto.jpg"); }
 	
 	#semantica, #armazenamento, #acesso, #conectividade, #multimedia, #graficos, #css3, #wormz, #skin, #capa, #quemsoueu, #instrucoes {
 		-moz-box-shadow: inset 0px 0px 250px #000000 !important;
@@ -271,6 +281,11 @@
 	#algumasnovidades {
 		margin: 10px 0 20px 0 !important;
 	}
+
+	#three {
+		margin-top: -20px !important;
+		font-size: 50px !important;
+	}
 	
 	[required] {
 	    border-color: #88a;
@@ -330,6 +345,11 @@
 		margin: 30px auto;
 		display: block;
 	}
+
+	#video-clip {
+		width: 400px;
+		height: 225px;
+	}
 	
 	#audio-atts {
 		margin: 15px 0 0 50px;
@@ -343,6 +363,25 @@
 		margin: 0 auto;
 		display: block;
 	}
+
+	article.nobackground h3 {
+		background: rgba(0, 0, 0, .75) !important;
+		padding-top: .2em !important;
+		padding-bottom: .3em !important;
+		margin-top: -.2em !important;
+	 	margin-left: -60px !important;
+	  	padding-left: 60px !important;
+	  	margin-right: -60px !important;
+	  	padding-right: 60px !important;
+	  	position: absolute !important;
+		bottom: 30px !important;
+		width: 100% !important;
+	}
+
+	article.nobackground h3 a {
+		color: #fff !important;
+		text-decoration: none !important;
+	}
 	
 	</style>
 
@@ -354,11 +393,11 @@
 
 		<!-- <article class="nobackground" id="quem-e"></article> -->
 		
-		<article class="nobackground" id="instrucoes"></article>		
-		<article class="nobackground" id="comousar">
-		<!-- <article class="fill">
-			<iframe src="http://github.com/zenorocha/comousarhtml5semumaquinadotempo"></iframe> -->
-		</article>
+		<article class="nobackground" id="instrucoes"></article>
+
+		<article class="nobackground" id="github-comousar">
+      		<h3><a href="http://github.com/zenorocha/comousarhtml5semumaquinadotempo" target="blank">http://github.com/zenorocha/comousarhtml5semumaquinadotempo</a></h3>
+      	</article>
 	
 		<article class="nobackground" id="moda"></article>
 		<article class="nobackground" id="wow"></article>
@@ -369,6 +408,12 @@
 		<article class="nobackground" id="estudou"></article>
 		<article class="nobackground" id="w3c-suspende"></article>
 		<article class="nobackground" id="indexeddb"></article>		
+		<article class="nobackground" id="doismiledoze"></article>
+
+		<article class="fill">
+			<iframe src="http://ishtml5readyyet.com/"></iframe>
+		</article>
+
 		<article class="nobackground" id="w3c"></article>
 		<article class="nobackground" id="aceite"></article>	
 		<article class="nobackground" id="polyfill"></article>
@@ -395,7 +440,20 @@
 		</article>
 
 		<article class="nobackground" id="ontem"></article>		
-		<article class="nobackground" id="hoje"></article>				
+		<article class="nobackground" id="hoje"></article>		
+		
+		<article class="nobackground" id="semantica">
+			<h1>Mas peraí...</h1>
+			<!-- <p>Como os navegadores antigos interpretam essas novas tags?</p> -->
+			<p>Para navegadores antigos uma tag <strong>&lt;header&gt;</strong> tem o mesmo valor semântico que uma tag <strong>&lt;zeno&gt;</strong>.</p>
+			<p>Portanto, precisamos definir que esses elementos sejam renderizados como blocos.</p>
+			<p>No JS:</p>
+			<textarea class="snippet" spellcheck="false" rows="1">document.createElement("header");</textarea>
+			<p>No CSS:</p>
+			<textarea class="snippet" spellcheck="false" rows="1">header { display: block; }</textarea>
+		</article>
+		
+		<article class="nobackground" id="html5shiv"></article>		
 		
 		<article class="nobackground" id="semantica">
 			<h1 id="algumasnovidades">Novidades para aplicações</h1>
@@ -418,20 +476,6 @@
 				<p><input type="search" results="10" placeholder="Pesquisar..." /></p>
 			</form>
 		</article>
-		
-		<article class="nobackground" id="semantica">
-			<h1 id="algumasnovidades">Mas peraí...</h1>
-			<!-- <p>Como os navegadores antigos interpretam essas novas tags?</p> -->
-			<p>Para navegadores antigos uma tag &lt;header&gt; tem o mesmo valor semântico que uma tag &lt;zeno&gt;</p>
-			<p>Ou seja, nenhum. Esses elementos precisam ser renderizados como blocos.</p>
-			<p>No JavaScript:</p>
-			<textarea class="snippet" spellcheck="false" rows="1">document.createElement("header");</textarea>
-			<p>No CSS:</p>
-			<textarea class="snippet" spellcheck="false" rows="1">header { display: block; }</textarea>
-		</article>
-		
-		
-		<article class="nobackground" id="html5shiv"></article>
 	
 		<article class="nobackground" id="armazenamento">
 			<h1>Armazenamento</h1>
@@ -490,13 +534,13 @@
 		<article class="nobackground" id="multimedia">
 			<h1 id="algumasnovidades">Áudio</h1>
 			<audio id="audio-clip" controls>
-               	<source src="src/audio.mp3" type="audio/mpeg">
-                <source src="src/audio.ogg" type="audio/ogg">
+               	<source src="src/zelda.mp3" type="audio/mpeg">
+                <source src="src/zelda.ogg" type="audio/ogg">
                 Seu navegador não suporta a tag &lt;audio&gt;
             </audio>
 			<textarea class="snippet" spellcheck="false" rows="5">&lt;audio controls&gt;
-    &lt;source src="src/audio.mp3" type="audio/mpeg"&gt;
-    &lt;source src="src/audio.ogg" type="audio/ogg"&gt;
+    &lt;source src="src/zelda.mp3" type="audio/mpeg"&gt;
+    &lt;source src="src/zelda.ogg" type="audio/ogg"&gt;
     Seu navegador não suporta a tag áudio
 &lt;/audio&gt;</textarea>
 			<div id="audio-atributes" class="build">			
@@ -510,41 +554,42 @@
 		</article>
 		
 		<article class="nobackground" id="buzz">
-			<!-- http://buzz.jaysalvat.com/ 
-			http://kolber.github.com/audiojs/ -->
+			<h3><a href="http://buzz.jaysalvat.com/" target="blank">http://buzz.jaysalvat.com/</a></h3>
+		</article>
+
+		<article class="nobackground" id="audiojs">
+			<h3><a href="http://kolber.github.com/audiojs/" target="blank">http://kolber.github.com/audiojs/</a></h3>
 		</article>
 		
 		<article class="nobackground" id="multimedia">
 			<h1 id="algumasnovidades">Vídeo</h1>
 		
-			<video width="390" id="clip" controls>
-				<source src="src/chrome_japan.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
-                <source src="src/chrome_japan.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
-                <source src="src/chrome_japan.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+			<video id="video-clip" controls>
+				<source src="src/html5-gang.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' /> 
+				<source src="src/html5-gang.ogv" type='video/ogg; codecs="theora, vorbis"' />
                	Seu navegador não suporta a tag vídeo
 			</video>
 	
 			<textarea class="snippet" spellcheck="false" rows="5">&lt;video controls&gt;
-    &lt;source src="src/chrome_japan.webm" type="video/webm;"&gt;
-    &lt;source src="src/chrome_japan.mp4" type="video/mp4;"&gt;
-    &lt;source src="src/chrome_japan.ogv" type="video/ogg;"&gt;
+    &lt;source src="src/html5-gang.mp4" type="video/mp4;"&gt;
+    &lt;source src="src/html5-gang.ogv" type="video/ogg;"&gt;
+    Seu navegador não suporta a tag vídeo
 &lt;/video&gt;</textarea>
 
 			<div id="audio-atributes" class="build">			
 				<p>E ainda mais atributos como:</p>
 				<ul id="audio-atts">
-					<li>poster</li>
-					<li>muted</li>
+					<li>poster / muted</li>
 				</ul>
 			</div>
 		</article>
 		
 		<article class="nobackground" id="videojs">
-			<!-- http://videojs.com/ -->
+			<h3><a href="http://videojs.com/" target="blank">http://videojs.com/</a></h3>
 		</article>
 		
 		<article class="nobackground" id="popcornjs">
-			<!-- http://popcornjs.org/ -->
+			<h3><a href="http://popcornjs.org/" target="blank">http://popcornjs.org/</a></h3>
 		</article>		
 	
 		<article class="nobackground" id="graficos">
@@ -558,7 +603,25 @@
 
 		<article class="nobackground" id="graficos">
 			<h1>SVG</h1>
+			<ul class="build">
+				<li>Gráficos vetoriais escaláveis</li>
+				<li>É o oposto de um <strong>bitmap</strong>, pois não lida com <strong>pixels</strong> e sim com um conjunto de <strong>curvas</strong> e <strong>linhas</strong></li>
+				<li>Linguagem no estilo XML
+				<textarea class="snippet" spellcheck="false" rows="3">&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1"&gt;
+   &lt;circle cx="100" cy="50" r="40" fill="red" /&gt;
+&lt;/svg&gt;</textarea></li>
+	        </ul>
 		</article>
+
+<!--		<html>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+</svg> 
+ 
+</body>
+</html> -->
 		
 		<article class="nobackground" id="skin">
 			<h1>Park</h1>
@@ -566,7 +629,11 @@
 		</article>
 		
 		<article class="nobackground" id="raphaeljs">
-			<!-- <iframe src="http://raphaeljs.com/"></iframe> -->
+			<h3><a href="http://raphaeljs.com/" target="blank">http://raphaeljs.com</a></h3>\
+		</article>
+
+		<article class="nobackground" id="maujorsvg">
+			<h3><a href="http://maujorsvg.com.br/" target="blank">http://maujorsvg.com.br</a></h3>
 		</article>
 		
 		<!-- <article class="nobackground" id="graficos">
@@ -576,17 +643,13 @@
 		<article class="fill" id="canvas">
 			<h1>Canvas</h1>
 			<ul class="build">
-				<li>Criação de gráficos
+				<li>Renderização de gráficos via script
 				<textarea class="snippet" spellcheck="false" rows="1">&lt;canvas id="meuDesenho" width="500" height="500"&gt;</textarea>
-				<textarea class="snippet" spellcheck="false" rows="2">var canvas = document.getElementById("meuDesenho"); canvas = canvas.getContext("2d");</textarea></li>
+				<textarea class="snippet" spellcheck="false" rows="2">var canvas = document.getElementById("meuDesenho"); 
+canvas = canvas.getContext("2d");</textarea></li>
 	        </ul>
 			<iframe src="http://www.spielzeugz.de/html5/space-noodles/"></iframe>
 		</article>
-		
-		<!-- <article class="fill" id="canvas">
-			<h1>Canvas</h1>
-			<iframe src="http://www.spielzeugz.de/html5/liquid-particles-3D/"></iframe>
-		</article> -->
 		
 		<article class="nobackground" id="wormz">
 			<h1>Wormz</h1>
@@ -600,12 +663,9 @@
 				<li>JavaScript + GPU = Wooow²!</li>
 				<li>Utiliza a tag <strong>&lt;canvas&gt;</strong> só que com um outro contexto
 				<textarea class="snippet" spellcheck="false" rows="1">&lt;canvas id="meuDesenho" width="500" height="500"&gt;</textarea>
-				<textarea class="snippet" spellcheck="false" rows="2">var canvas = document.getElementById("meuDesenho"); canvas = canvas.getContext("experimental-webgl");</textarea></li>
+				<textarea class="snippet" spellcheck="false" rows="2">var canvas = document.getElementById("meuDesenho"); 
+canvas = canvas.getContext("experimental-webgl");</textarea></li>
 	        </ul>
-		</article>
-		
-		<article class="nobackground" id="threejs">
-			<!-- http://alteredqualia.com/three/examples/webgl_shadowmap.html -->
 		</article>
 
 		<article class="nobackground" id="skin">
@@ -617,356 +677,63 @@
 			<h1>Skin</h1>
 			<a href="http://alteredqualia.com/three/examples/webgl_materials_skin.html" target="blank" class="btn"><span>DEMO</span></a>			
 		</article>
-		
-		<article class="fill">
-			<iframe src="http://code.google.com/p/jebgl/"></iframe>
+
+		<article class="nobackground" id="threejs">
+			<h1 id="three">Quer brincar de verdade?</h1>
+			<h3><a href="https://github.com/mrdoob/three.js" target="blank">https://github.com/mrdoob/three.js</a></h3>
 		</article>
 
-	  <!--<article class="fill">
-        <iframe src="http://alteredqualia.com/three/examples/webgl_shadowmap.html"></iframe>
-      </article>
+		<article class="nobackground" id="learningthreejs">
+			<h3><a href="http://learningthreejs.com/" target="blank">http://learningthreejs.com</a></h3>
+		</article>
 	
-	  <article class="fill">
-        <iframe src="http://www.spielzeugz.de/html5/space-noodles/"></iframe>
-      </article> -->
-	
-	  <article class="nobackground" id="css3">
-		<h1>CSS</h1>
-		<img src="img/categorias/css3.png" alt="CSS3">
-	  </article>
+	  	<article class="nobackground" id="css3">
+			<h1>CSS</h1>
+			<img src="img/categorias/css3.png" alt="CSS3">
+	  	</article>
 	
 		<article class="nobackground" id="skin">
 			<h1>Expressive Web</h1>
 			<a href="http://beta.theexpressiveweb.com/" target="blank" class="btn"><span>DEMO</span></a>			
 		</article>	
 		
-		<article class="fill">
-			<iframe src="http://css3pie.com/"></iframe>
+		<article class="nobackground" id="css3pie">	
+			<h3><a href="http://css3pie.com/" target="blank">http://css3pie.com</a></h3>
 		</article>
 		
-		<article class="fill">
-			<iframe src="http://selectivizr.com/"></iframe>
+		<article class="nobackground" id="selectvizr">	
+			<h3><a href="http://selectivizr.com/" target="blank">http://selectivizr.com</a></h3>
 		</article>
 
-      <article>
-        <h3>
-          Simple slide with header and text
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
-
-      <article class="smaller">
-        <h3>
-          Simple slide with header and text (small font)
-        </h3>
-        <p>
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-          This is a slide with just text. This is a slide with just text.
-        </p>
-        <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
-        </p>
-      </article>
-
-      <article>
-        <h3>
-          Slide with bullet points and a longer title, just because we
-          can make it longer
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          </li>
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          </li>
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          </li>
-          <li>
-            At all times strive to maintain Google"s corporate look and feel
-          </li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>
-          Slide with bullet points that builds
-        </h3>
-        <ul class="build">
-          <li>
-            This is an example of a list
-          </li>
-          <li>
-            The list items fade in
-          </li>
-          <li>
-            Last one!
-          </li>
-        </ul>
-
-        <div class="build">
-          <p>Any element with child nodes can build.</p>
-          <p>It doesn"t have to be a list.</p>
-        </div>
-      </article>
-
-      <article class="smaller">
-        <h3>
-          Slide with bullet points (small font)
-        </h3>
-        <ul>
-          <li>
-            Use this template to create your presentation
-          <li>
-            Use the provided color palette, box and arrow graphics, and
-            chart styles
-          <li>
-            Instructions are provided to assist you in using this
-            presentation template effectively
-          <li>
-            At all times strive to maintain Google"s corporate look and feel
-        </ul>
-      </article>
-
-      <article>
-        <h3>
-          Slide with a table
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
+      	<article>
+        	<q>Content precedes design. Design in the absence of content is not design, it's decoration.</q>
+        	<!-- https://twitter.com/#!/zeldman/status/804159148 -->
+        	<div class="author">Jeffrey Zeldman</div>
+      	</article>
       
-      <article class="smaller">
-        <h3>
-          Slide with a table (smaller text)
-        </h3>
-        
-        <table>
-          <tr>
-            <th>
-              Name
-            <th>
-              Occupation
-          <tr>
-            <td>
-              Luke Mahé
-            <td>
-              V.P. of Keepin’ It Real
-          <tr>
-            <td>
-              Marcin Wichary
-            <td>
-              The Michael Bay of Doodles
-        </table>
-      </article>
-      
-      <article>
-        <h3>
-          Styles
-        </h3>
-        <ul>
-          <li>
-            <span class="red">class="red"</span>
-          <li>
-            <span class="blue">class="blue"</span>
-          <li>
-            <span class="green">class="green"</span>
-          <li>
-            <span class="yellow">class="yellow"</span>
-          <li>
-            <span class="black">class="black"</span>
-          <li>
-            <span class="white">class="white"</span>
-          <li>
-            <b>bold</b> and <i>italic</i>
-        </ul>
-      </article>
-      
-      <article>
-        <h2>
-          Segue slide
-        </h2>
-      </article>
+		<article class="nobackground" id="modernizr">	
+			<h3><a href="http://modernizr.com" target="blank">http://modernizr.com</a></h3>
+		</article>
 
-      <article>
-        <h3>
-          Slide with an image
-        </h3>
-        <p>
-          <img style="height: 500px" src="images/example-graph.png">
-        </p>
-        <div class="source">
-          Source: Sergey Brin
-        </div>
-      </article>
+		<article class="nobackground" id="modernizr-pt">	
+			<h3><a href="http://www.andrebuzzo.com.br/bibliotecaModernizr/" target="blank">http://www.andrebuzzo.com.br/bibliotecaModernizr</a></h3>
+		</article>
 
-      <article>
-        <h3>
-          Slide with an image (centered)
-        </h3>
-        <p>
-          <img class="centered" style="height: 500px" src="images/example-graph.png">
-        </p>
-        <div class="source">
-          Source: Larry Page
-        </div>
-      </article>
+      	<article class="nobackground" id="diveinto">	
+      		<h3><a href="http://diveintohtml5.com.br" target="blank">http://diveintohtml5.com.br</a></h3>
+      	</article>
 
-      <article class="fill">
-        <h3>
-          Image filling the slide (with optional header)
-        </h3>
-        <p>
-          <img src="images/example-cat.jpg">
-        </p>
-        <div class="source white">
-          Source: Eric Schmidt
-        </div>
-      </article>
+      	<article class="nobackground" id="github-diveinto">	
+      		<h3><a href="https://github.com/zenorocha/diveintohtml5" target="blank">https://github.com/zenorocha/diveintohtml5</a></h3>
+      	</article>
 
-      <article>
-        <h3>
-          This slide has some code
-        </h3>
-        <section>
-        <pre>
-&lt;script type="text/javascript"&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert("Hello " + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: "umber" }
-&lt;/style&gt;
-</pre>
-        </section>
-      </article>
-      
-      <article class="smaller">
-        <h3>
-          This slide has some code (small font)
-        </h3>
-        <section>
-        <pre>
-&lt;script type="text/javascript"&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    for (var i = 42; --i &gt;= 0;) {
-      alert("Hello " + String(world));
-    }
-  }
-&lt;/script&gt;
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-  u { color: "umber" }
-&lt;/style&gt;
-</pre>
-        </section>
-      </article>
-      
-      <article>
-        <q>
-          Content precedes design. Design in the absence of content is not design, it's decoration.
-			<!-- https://twitter.com/#!/zeldman/status/804159148 -->
-        </q>
-        <div class="author">
-          Jeffrey Zeldman
-        </div>
-      </article>
-      
-      <article class="smaller">
-        <q>
-          A distributed system is one in which the failure of a computer 
-          you didn’t even know existed can render your own computer unusable.
-        </q>
-        <div class="author">
-          Leslie Lamport
-        </div>
-      </article>
-      
-      <article class="nobackground">
-        <h3>
-          A slide with an embed + title
-        </h3>
-        
-        <iframe src="http://www.google.com/doodle4google/history.html"></iframe>
-      </article>
+      	<article class="nobackground" id="facebook">
+      		<h3><a href="http://developers.facebook.com/html5" target="blank">http://developers.facebook.com/html5</a></h3>
+      	</article>
 
-      <article class="nobackground">
-        <iframe src="http://www.google.com/doodle4google/history.html"></iframe>
-      </article>
-
-      <article class="fill">
-        <!-- <h3>modernizr.com</h3> -->
-        <iframe src="http://modernizr.com"></iframe>
-      </article>
-      
-      <article>
-        <h3>
-          Thank you!
-        </h3>
-        
-        <ul>
-          <li>
-            <a href="http://www.google.com">google.com</a>
-        </ul>
-      </article>
-
-      <article class="nobackground" id="zenorocha">	
-	  <!-- <article class="fill">
-        <iframe src="http://zenorocha.com"></iframe> -->
-      </article>
-
-      <article class="nobackground" id="blog">	
-	  <!-- <article class="fill">
-        <iframe src="http://blog.zenorocha.com"></iframe> -->
-      </article>
-
-      <article class="nobackground" id="diveinto">	
-	  <!-- <article class="fill">
-        <iframe src="http://diveintohtml5.com.br"></iframe> -->
-      </article>
-
-      <article class="nobackground" id="facebook">
-	  <!-- <article class="fill">
-        <iframe src="http://developers.facebook.com/html5"></iframe> -->
-      </article>
-
+      	<article class="nobackground" id="polyfill-list">
+      		<h3><a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills" target="blank">https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills</a></h3>
+      	</article>
 
     </section>
 
