@@ -123,7 +123,6 @@
 	         url('font/gotham-ultra-webfont.svg#GothamUltraRegular') format('svg');
 	    font-weight: normal;
 	    font-style: normal;
-
 	}
 
 	#tudo { background: url("Untitled-1.jpg"); }
@@ -233,6 +232,19 @@
 		-o-box-shadow: inset 0px 0px 30px 30px #000000 !important;
 		box-shadow: inset 0px 0px 30px 30px #000000 !important;*/
 	}
+
+	.logo {
+			width:275px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			padding: 15px;
+		}
+		
+		.container {
+			-webkit-perspective: 300; perspective: 300;
+		}
+
 	
 	h1 {
 		font-family: 'GothamUltraRegular' !important;
@@ -254,14 +266,14 @@
 		margin: 50px 0 0 0 !important;
 		padding: 0 !important;
 	}
+
+	.main {
+		display: none;
+	}
 	
 	img {
 		text-align: center !important;
 		margin: 20px 0 0 165px;
-	}
-	
-	.centro {
-		margin: 100px 0 0 165px;
 	}
 
 	.build, .build li {
@@ -289,11 +301,14 @@
 	#speech-input-field {
 		width: 400px;
 		height: 50px;
-		/*padding: 10px 15px;*/
-		font-size: 155%;
+		display: block;
+		margin: 50px auto;
+		margin-bottom: 50px;
+		font-size: 30px;
 		border-radius: 10px;
 		border: 1px solid #CCC;
 		outline: 0;
+		margin: ;
 	}
 	
 	#mapcanvas {
@@ -549,8 +564,8 @@
 		-moz-transform: rotate(45deg) skew(45deg);
 		-o-transform: rotate(45deg) skew(45deg);
 		transform: rotate(45deg) skew(45deg);
-		left: 500px;
-		top: 250px;
+		left: 550px;
+		top: 300px;
 		text-align: center;
 	}
 
@@ -803,11 +818,71 @@ localStorage.clear();</textarea>
 			<h1>Acesso à hardware</h1>
 			<img src="img/categorias/acesso.png" alt="Acesso à hardware">
 		</article>
-		
+	
 		<article class="nobackground" id="acesso">
-			<h1>FileSystem API</h1>
+			<h1>Input de áudio</h1>
+			<input id="speech-input-field" type="text" x-webkit-speech="">
+			<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="text" x-webkit-speech /&gt;</textarea>
 		</article>
-		
+
+		<article class="nobackground" id="geo2">
+			<h3 class="acesso">Geolocalização</h3>
+			<p>Procurando sua localização: <span id="status">checando...</span></p>
+		</article>
+
+		<article id="geo">
+			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+			<script type="text/javascript" src="js/geolocation.js"></script>
+		</article>
+
+		<article class="nobackground" id="acesso">
+			<h1>Device orientation</h1>
+			<div class="main">
+			    <table>
+			    	<tr>
+			    		<td>Event Supported</td>
+			    		<td id="doEvent"></td>
+			    	</tr>
+			    	<tr>
+			    		<td>Tilt Left/Right [tiltLR]</td>
+			    		<td id="doTiltLR"></td>
+			    	</tr>
+			    	<tr>
+			    		<td>Tilt Front/Back [tiltFB]</td>
+			    		<td id="doTiltFB"></td>
+			    	</tr>
+			    	<tr>
+			    		<td>Direction [direction]</td>
+			    		<td id="doDirection"></td>
+			    	</tr>
+			    	<tr>
+			    		<td>Motion Up/Down</td>
+			    		<td id="doMotionUD"></td>
+			    	</tr>
+			    </table>
+			</div>
+
+			<div class="container" style="-webkit-perspective: 300; perspective: 300;">
+				<img src="img/php-logo.png" id="imgLogo" class="logo">
+			</div>
+			<textarea class="snippet" spellcheck="false" rows="5">window.addEventListener('deviceorientation', function(eventData) {
+	var tiltLR = eventData.gamma;
+	var tiltFB = eventData.beta;
+	var dir = eventData.alpha;
+}, false);</textarea>
+
+			<script type="text/javascript" src="js/deviceorientation.js"></script>	
+			<script type="text/javascript">
+				init3();
+			</script>
+
+		</article>
+	
+		<!-- <article class="nobackground" id="conectividade">
+			<h1>Conectividade</h1>
+			<img src="img/categorias/conectividade.png" alt="Conectividade">
+		</article>	-->
+
 		<!-- <article class="fill">
 			<iframe src="http://labs.zenorocha.com/file"></iframe>
 		</article> -->
@@ -821,27 +896,6 @@ localStorage.clear();</textarea>
 			<h1>Terminal</h1>
 			<a href="http://www.htmlfivewow.com/demos/terminal/terminal.html" target="blank" class="btn"><span>DEMO</span></a>			
 		</article>
-	
-		<article>
-			<h3 class="acesso">Input de áudio</h3>
-			<pre class="prettyprint">&lt;input type="text" x-webkit-speech /&gt;</pre>		
-			<input class="centro" id="speech-input-field" type="text" x-webkit-speech="">
-		</article>
-
-		<article id="geo2">
-			<h3 class="acesso">Geolocalização</h3>
-			<p>Procurando sua localização: <span id="status">checando...</span></p>
-		</article>
-
-		<!-- <article id="geo">
-			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-			<script type="text/javascript" src="js/geolocation.js"></script>
-		</article> -->
-	
-		<!-- <article class="nobackground" id="conectividade">
-			<h1>Conectividade</h1>
-			<img src="img/categorias/conectividade.png" alt="Conectividade">
-		</article>	-->
 	
 		<article class="nobackground" id="multimedia">
 			<h1>Multimídia</h1>
@@ -1003,13 +1057,26 @@ canvas = canvas.getContext("experimental-webgl");</textarea></li>
 		    <span class="demo-gradient css3-demo">gradient</span>
 		    <span class="demo-transform css3-demo">transform</span>
 		    <span class="demo-border-image css3-demo">border-image</span>
-		    <span class="demo-font-face css3-demo">font-face</span>
 		    <span class="demo-text-overflow css3-demo">text-overflow</span>
 	  	</article>
 
 	  	<article class="nobackground" id="layerstyles">
 			<h3><a href="http://bit.ly/sfslbq" target="blank">http://bit.ly/sfslbq</a></h3>
 		</article>
+
+		<article class="nobackground" id="css3">
+			<h1>@font-face</h1>
+			<textarea class="snippet" spellcheck="false" rows="8">@font-face {
+	font-family: 'Gotham';
+	src: url('font/gotham.eot');
+	src: url('font/gotham.eot?#iefix') format('embedded-opentype'),
+	url('font/gotham.woff') format('woff'),
+	url('font/gotham.ttf') format('truetype'),
+	url('font/gotham.svg#Gotham') format('svg');
+}</textarea>
+
+		</article>		
+
 
 	  	<article class="nobackground" id="fontsquirrel">
 			<h3><a href="http://bit.ly/ti7oQE" target="blank">http://bit.ly/ti7oQE</a></h3>
@@ -1053,10 +1120,18 @@ canvas = canvas.getContext("experimental-webgl");</textarea></li>
 			<h3><a href="http://bit.ly/vQcz9p" target="blank">http://bit.ly/vQcz9p</a></h3>
 		</article>
 
-      	<article>
-        	<q>Content precedes design. Design in the absence of content is not design, it's decoration.</q>
-        	<!-- https://twitter.com/#!/zeldman/status/804159148 -->
-        	<div class="author">Jeffrey Zeldman</div>
+		<article class="nobackground" id="css3">
+			<h1>A guerra ainda não acabou</h1>
+			<ul class="build">
+				<li>☑ Saddam Hussein</li>
+				<li>☑ Osama Bin Laden</li>
+				<li>☑ Khaddafi</li>
+				<li>☐ Internet Explorer</li>
+	        </ul>
+		</article>
+
+		<article class="nobackground" id="salveaweb">
+      		<h3><a href="http://bit.ly/sIbvFv" target="blank">http://bit.ly/sIbvFv </a></h3>
       	</article>
 
       	<article class="nobackground" id="h5bp">
@@ -1073,10 +1148,6 @@ canvas = canvas.getContext("experimental-webgl");</textarea></li>
 
 		<article class="nobackground" id="polyfill-list">
       		<h3><a href="http://bit.ly/svv9BU" target="blank">http://bit.ly/svv9BU</a></h3>
-      	</article>
-
-      	<article class="nobackground" id="facebook">
-      		<h3><a href="http://bit.ly/rH4BfS" target="blank">http://bit.ly/rH4BfS</a></h3>
       	</article>
 
       	<article class="nobackground" id="roots">
@@ -1102,22 +1173,13 @@ canvas = canvas.getContext("experimental-webgl");</textarea></li>
       	<article class="nobackground" id="tv-5"></article>
       	<article class="nobackground" id="tv-6"></article>
 
-      	<article class="nobackground" id="faltapouco">
-			<h1>A guerra ainda não acabou</h1>
-			<ul class="build">
-				<li>☑ Saddam Hussein</li>
-				<li>☑ Osama Bin Laden</li>
-				<li>☑ Khaddafi</li>
-				<li>☐ Internet Explorer</li>
-	        </ul>
-		</article>
-
-		<article class="nobackground" id="salveaweb">
-      		<h3><a href="http://bit.ly/sIbvFv" target="blank">http://bit.ly/sIbvFv </a></h3>
-      	</article>
-
       	<article class="nobackground" id="flash"></article>
       	<article class="nobackground" id="fim"></article>
+
+      	<!-- <article>
+        	<q>Content precedes design. Design in the absence of content is not design, it's decoration.</q>
+        	<div class="author">Jeffrey Zeldman</div>
+      	</article> -->
 
     </section>
 
