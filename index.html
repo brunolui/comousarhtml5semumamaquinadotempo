@@ -201,12 +201,16 @@
 	
 
 	
-	#semantica, #armazenamento, #acesso, #conectividade, #multimedia, #graficos, #css3, #wormz, #skin, #capa, #quemsoueu {
+	#semantica, #armazenamento, #acesso, #conectividade, #multimedia, #graficos, #css3, #wormz, #skin, #capa, #quemsoueu, #input-iphone {
 		-moz-box-shadow: inset 0px 0px 250px #000000 !important;
 		-webkit-box-shadow: inset 0px 0px 250px #000000 !important;
 		-o-box-shadow: inset 0px 0px 250px #000000 !important;
 		box-shadow: inset 0px 0px 250px #000000 !important;
-	}		
+	}
+
+	#input-iphone {
+		background: #b73751 url("img/input-iphone.png"); 
+	}
 	
 	#semantica { background: #b73751; }
 	#quemsoueu { background-color: #72a943; }
@@ -313,6 +317,25 @@
 	#algumasnovidades {
 		margin: 10px 0 40px 0 !important;
 		font-size: 55px !important;
+	}
+
+	#input-iphone h1 {
+		margin: 10px 0 20px 0 !important;
+		font-size: 50px !important;
+	}
+
+	#input-number, #input-email {
+		display: inline-block !important;
+		width: 300px !important;
+		position: absolute;
+	}
+
+	#input-number {
+		left: 95px;
+	}
+
+	#input-email {
+		right: 90px;
 	}
 
 	#three {
@@ -706,7 +729,13 @@
 				<p><input id="input-exemplo" type="text" required /><button type="submit">Submeter</button></p>
 				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="text" required /&gt;</textarea>
 			</form>
-		</article>	
+		</article>
+
+		<article class="nobackground" id="input-iphone">
+			<h1>Dispositivos móveis</h1>
+			<textarea id="input-number" class="snippet" spellcheck="false" rows="1">&lt;input type="number" /&gt;</textarea>
+			<textarea id="input-email" class="snippet" spellcheck="false" rows="1">&lt;input type="email" /&gt;</textarea>
+		</article>
 	
 		<article class="nobackground" id="armazenamento">
 			<h1>Armazenamento</h1>
