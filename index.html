@@ -201,7 +201,7 @@
 	
 
 	
-	#semantica, #armazenamento, #acesso, #conectividade, #multimedia, #graficos, #css3, #wormz, #skin, #capa, #quemsoueu, #input-iphone {
+	#semantica, #armazenamento, #acesso, #conectividade, #multimedia, #graficos, #css3, #wormz, #skin, #capa, #quemsoueu, #input-iphone, #input-android {
 		-moz-box-shadow: inset 0px 0px 250px #000000 !important;
 		-webkit-box-shadow: inset 0px 0px 250px #000000 !important;
 		-o-box-shadow: inset 0px 0px 250px #000000 !important;
@@ -210,6 +210,10 @@
 
 	#input-iphone {
 		background: #b73751 url("img/input-iphone.png"); 
+	}
+
+	#input-android {
+		background: #b73751 url("img/input-android.png"); 	
 	}
 	
 	#semantica { background: #b73751; }
@@ -319,22 +323,22 @@
 		font-size: 55px !important;
 	}
 
-	#input-iphone h1 {
+	#input-iphone h1, #input-android h1 {
 		margin: 10px 0 20px 0 !important;
 		font-size: 50px !important;
 	}
 
-	#input-number, #input-email {
+	#input-tel, #input-email, #input-text, #input-number {
 		display: inline-block !important;
 		width: 300px !important;
 		position: absolute;
 	}
 
-	#input-number {
+	#input-tel, #input-text {
 		left: 95px;
 	}
 
-	#input-email {
+	#input-email, #input-number {
 		right: 90px;
 	}
 
@@ -731,9 +735,15 @@
 			</form>
 		</article>
 
+		<article class="nobackground" id="input-android">
+			<h1>Dispositivos móveis</h1>
+			<textarea id="input-text" class="snippet" spellcheck="false" rows="1">&lt;input type="text" /&gt;</textarea>
+			<textarea id="input-number" class="snippet" spellcheck="false" rows="1">&lt;input type="number" /&gt;</textarea>
+		</article>
+
 		<article class="nobackground" id="input-iphone">
 			<h1>Dispositivos móveis</h1>
-			<textarea id="input-number" class="snippet" spellcheck="false" rows="1">&lt;input type="number" /&gt;</textarea>
+			<textarea id="input-tel" class="snippet" spellcheck="false" rows="1">&lt;input type="tel" /&gt;</textarea>
 			<textarea id="input-email" class="snippet" spellcheck="false" rows="1">&lt;input type="email" /&gt;</textarea>
 		</article>
 	
