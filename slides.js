@@ -1,7 +1,7 @@
 /*
   Google HTML5 slides template
 
-  Authors: Luke Mahé (code)
+  Authors: Luke MahÃ© (code)
            Marcin Wichary (code and design)
 
            Dominic Mazzoni (browser compatibility)
@@ -11,8 +11,6 @@
 */
 
 var PERMANENT_URL_PREFIX = 'http://comousarhtml5semumamaquinadotempo.com/';
-//var PERMANENT_URL_PREFIX = 'http://html5slides.googlecode.com/svn/trunk/';
-//var MY_PERMANENT_URL_PREFIX = 'http://labs.zenorocha.com/';
 
 var SLIDE_CLASSES = ['far-past', 'past', 'current', 'next', 'far-next'];
 
@@ -527,6 +525,23 @@ function addEventListeners() {
 
 /* Initialization */
 
+function addPrettify() {
+  var els = document.querySelectorAll('pre');
+  for (var i = 0, el; el = els[i]; i++) {
+    if (!el.classList.contains('noprettyprint')) {
+      el.classList.add('prettyprint');
+    }
+  }
+  
+  var el = document.createElement('script');
+  el.type = 'text/javascript';
+  el.src = PERMANENT_URL_PREFIX + 'prettify.js';
+  el.onload = function() {
+    prettyPrint();
+  }
+  document.body.appendChild(el);
+};
+
 function addFontStyle() {
   var el = document.createElement('link');
   el.rel = 'stylesheet';
@@ -537,13 +552,19 @@ function addFontStyle() {
   document.body.appendChild(el);
 };
 
-function addGeneralStyle() {	
+function addGeneralStyle() {
   var el = document.createElement('link');
   el.rel = 'stylesheet';
   el.type = 'text/css';
-  el.href = MY_PERMANENT_URL_PREFIX + 'css/main.css';
+  el.href = PERMANENT_URL_PREFIX + 'styles.css';
   document.body.appendChild(el);
 
+  var el = document.createElement('link');
+  el.rel = 'stylesheet';
+  el.type = 'text/css';
+  el.href = PERMANENT_URL_PREFIX + 'css/custom.css';
+  document.body.appendChild(el);
+  
   var el = document.createElement('meta');
   el.name = 'viewport';
   el.content = 'width=1100,height=750';
