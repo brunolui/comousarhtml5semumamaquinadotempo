@@ -7,7 +7,7 @@
 
     <meta charset="utf-8">
     <meta name="author" content="Zeno Rocha" />
-    <meta name="description" content="Palestra sobre HTML5 apresentada no dia 05 de novembro de 2011" />
+    <meta name="description" content="Palestra ministrada no dia 05/11/11 nos eventos PHP'n Rio e Encontro de Tecnologia Simonsen" />
 
     <script src="js/slides.js"></script>
 	
@@ -153,7 +153,7 @@
 	#threejs { background: url("img/threejs.jpg"); border: 3px solid #fff !important; }
 	#wormz, #skin { background: url("img/fundo.png"); }	
 	#quemsoueu { background-image: url("img/quemsoueu.png"); }	
-	#html5shiv { background: url("img/html5shiv.png"); }
+	#html5shiv { background: url("img/html5shiv.jpg"); }
 	#raphaeljs { background: url("img/raphael.jpg"); }		
 	#videojs { background: url("img/videojs.jpg"); }		
 	#popcornjs { background: url("img/popcornjs.jpg"); }	
@@ -311,7 +311,8 @@
 	}
 	
 	#algumasnovidades {
-		margin: 10px 0 20px 0 !important;
+		margin: 10px 0 40px 0 !important;
+		font-size: 55px !important;
 	}
 
 	#three {
@@ -416,12 +417,32 @@
 		text-decoration: none !important;
 	}
 
-	#exemplo-local {
-		width: 96%;
-		height: 150px;
-		font-size: 105%;
+	#input-exemplo {
+		width: 300px;
+		height: 5px;
+		font-size: 20px;
 		padding: 15px;
 		border-radius: 8px;
+		border: 1px solid #CCC;
+		-webkit-box-shadow: 0 3px 10px #ccc inset;
+		outline: none;
+	}
+
+	#num-exemplo {
+		width: 100px;
+		padding: 5px;
+		font-size: 24px;
+		border-radius: 8px;
+		border: 1px solid #CCC;
+		-webkit-box-shadow: 0 3px 10px #ccc inset;
+		outline: none;
+	}
+
+	#date-exemplo {
+		width: 200px;
+		padding: 5px;
+		border-radius: 8px;
+		font-size: 20px;
 		border: 1px solid #CCC;
 		-webkit-box-shadow: 0 3px 10px #ccc inset;
 		outline: none;
@@ -431,10 +452,10 @@
 		font: 18px Arial, sans-serif;
 		background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#F9F9F9), to(#E3E3E3));
 		border: 1px solid #CCC;
-		border-radius: 3px;
-		margin: 0 8px 0 0;
+		border-radius: 8px;
+		margin: -20px 0 0 8px;
 		color: black;
-		padding: 4px 8px 3px;
+		padding: 6px 8px;
 		outline: none;
 		white-space: nowrap;
 		vertical-align: middle;
@@ -586,7 +607,7 @@
 
 		<article class="nobackground" id="capa"></article>
 
-		<article class="nobackground" id="quemsoueu"></article>
+		<!-- <article class="nobackground" id="quemsoueu"></article> -->
 		
 		<article class="nobackground" id="instrucoes">
 			<h3><a href="http://comousarhtml5semumamaquinadotempo.com" target="blank">http://comousarhtml5semumamaquinadotempo.com</a></h3>
@@ -640,24 +661,33 @@
 			<p class="doctype-html">&lt;!DOCTYPE html&gt;</p>
 		</article>
 
+		<article class="nobackground" id="semantica">
+			<p class="doctype-xhtml"><br><br>&lt;meta http-equiv<br>="content-type" content="text/html; charset=utf-8"&gt;</p>
+		</article>
+
+		<article class="nobackground" id="semantica">
+			<p class="doctype-html">&lt;meta charset="utf-8"&gt;</p>
+		</article>
+
 		<article class="nobackground" id="ontem"></article>		
 		<article class="nobackground" id="hoje"></article>		
 		
 		<article class="nobackground" id="semantica">
 			<h1>Mas peraí...</h1>
-			<!-- <p>Como os navegadores antigos interpretam essas novas tags?</p> -->
 			<p>Para navegadores antigos uma tag <strong>&lt;header&gt;</strong> tem o mesmo valor semântico que uma tag <strong>&lt;zeno&gt;</strong>.</p>
-			<p>Portanto, precisamos definir que esses elementos sejam renderizados como blocos.</p>
+			<p>Portanto, precisamos dizer ao navegador que esses elementos devem ser renderizados como blocos.</p>
 			<p>No JS:</p>
 			<textarea class="snippet" spellcheck="false" rows="1">document.createElement("header");</textarea>
 			<p>No CSS:</p>
 			<textarea class="snippet" spellcheck="false" rows="1">header { display: block; }</textarea>
 		</article>
 		
-		<article class="nobackground" id="html5shiv"></article>		
+		<article class="nobackground" id="html5shiv">
+			<h3><a href="http://bit.ly/taQO1E" target="blank">http://bit.ly/taQO1E</a></h3>
+		</article>
 		
 		<article class="nobackground" id="semantica">
-			<h1 id="algumasnovidades">Novidades para aplicações</h1>
+			<h1 id="algumasnovidades">Algumas novidades <br>para aplicações</h1>
 			<p><progress>carregando...</progress></p>			
 			<textarea class="snippet" spellcheck="false" rows="1">&lt;progress&gt; carregando... &lt;/progress&gt;</textarea>			
 			<p><progress value="75" max="100">3/4 carregado</progress></p>
@@ -668,13 +698,13 @@
 		
 		<article class="nobackground" id="semantica">
 			<form>
-				<h1 id="algumasnovidades">Novidades para formulários</h1>
-				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="text" required /&gt;</textarea>
-				<p><input type="text" required /><input type="submit" value="Submeter" /></p>
+				<h1 id="algumasnovidades">Algumas novidades <br>para formulários</h1>
+				<p><input id="num-exemplo" type="number" step="1" min="-5" max="10" value="0" /></p>
 				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="number" step="1" min="-5" max="10" /&gt;</textarea>
-				<p><input type="number" step="1" min="-5" max="10" value="0" /></p>
-				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="search" placeholder="Pesquisar..." /&gt;</textarea>
-				<p><input type="search" results="10" placeholder="Pesquisar..." /></p>
+				<p><input id="date-exemplo" type="date" max="2011-11-20" value="2011-11-05"/></p>
+				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="date" max="2011-11-20" value="2011-11-05"/&gt;</textarea>
+				<p><input id="input-exemplo" type="text" required /><button type="submit">Submeter</button></p>
+				<textarea class="snippet" spellcheck="false" rows="1">&lt;input type="text" required /&gt;</textarea>
 			</form>
 		</article>	
 	
