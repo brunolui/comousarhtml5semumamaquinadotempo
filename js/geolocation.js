@@ -1,48 +1,34 @@
-function success(position) {
-  var s = document.querySelector('#status');
+var map;
+var marker;
+var positionId;
+var currentLocation;
 
-  if (s.className == 'success') {
-    // not sure why we're hitting this twice in FF, I think it's to do with a cached result coming back    
-    return;
-  }
+function moveMap(position) {
 
-  s.innerHTML = "te achei!";
-  s.className = 'success';
+  currentLocation = new GLatLng(position.coords.latitude, position.coords.longitude);
 
-  var mapcanvas = document.createElement('div');
-  mapcanvas.id = 'mapcanvas';
-  mapcanvas.style.width = '900px';
-  mapcanvas.style.height = '700px';
-
-  document.getElementById('geo').appendChild(mapcanvas);
-
-  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-  var myOptions = {
-    zoom: 15,
-    center: latlng,
-    mapTypeControl: false,
-    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
-
-  var marker = new google.maps.Marker({
-      position: latlng, 
-      map: map, 
-      title:"Você está aqui!"
+  marker = new GMarker(new GLatLng(position.coords.latitude, position.coords.longitude));
+  
+  GEvent.addListener(marker,"click", function() {
+    var myHtml = "Você está mais ou menos aqui.";
+    map.openInfoWindowHtml(currentLocation, myHtml);
   });
+
+  map.addOverlay(marker);
+  map.setZoom(15);
+  map.panTo(new GLatLng(position.coords.latitude, position.coords.longitude));
+
 }
 
-function error(msg) {
-  var s = document.querySelector('#status');
-  s.innerHTML = typeof msg == 'string' ? msg : "falhou =/";
-  s.className = 'fail';
-
-  // console.log(arguments);
+function handleError(error) {
+  console.log(error.message);
 }
 
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(success, error);
-} else {
-  error('Não há suporte.');
+function initialize() {
+  if (GBrowserIsCompatible()) {
+    map = new GMap2(document.getElementById("mapcanvas"));
+    map.setCenter(new GLatLng(37.4419, -122.1419), 13);
+    map.addControl(new GSmallMapControl());
+    positionId = navigator.geolocation.watchPosition(moveMap, handleError);
+  }
 }

@@ -75,8 +75,6 @@ body {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 
-  background-color: white;
-
   box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
   border: 1px solid rgba(0, 0, 0, .3);
 
@@ -94,25 +92,6 @@ body {
   width: 1100px;
   
   padding: 40px 160px;
-}
-
-.slides.template-default > article:not(.nobackground):not(.biglogo) {
-  background: url(images/google-logo-small.png) 710px 625px no-repeat;  
-  
-  background-color: white;  
-} 
-
-.slides.template-io2011 > article:not(.nobackground):not(.biglogo) {
-  background: url(images/colorbar.png) 0 600px repeat-x,
-              url(images/googleio-logo.png) 640px 625px no-repeat;
-
-  background-size: 100%, 225px;  
-
-  background-color: white;  
-}
-.slides.layout-widescreen > article:not(.nobackground):not(.biglogo),
-.slides.layout-faux-widescreen > article:not(.nobackground):not(.biglogo) {
-  background-position-x: 0, 840px;
 }
 
 /* Clickable/tappable areas */
@@ -150,18 +129,6 @@ body {
 .slides.layout-widescreen #next-slide-area,
 .slides.layout-faux-widescreen #next-slide-area {
   margin-left: 500px;
-}
-
-/* Slide styles */
-
-.slides.template-default article.biglogo {
-  background: white url(images/google-logo.png) 50% 50% no-repeat;
-}
-
-.slides.template-io2011 article.biglogo {
-  background: white url(images/googleio-logo.png) 50% 50% no-repeat;
-
-  background-size: 600px;
 }
 
 /* Slides */
@@ -521,7 +488,7 @@ q {
   line-height: 72px;
   
   margin-left: 20px;
-  
+  color: #fff;
   margin-top: 100px;
   margin-right: 150px;    
 }
@@ -535,7 +502,7 @@ q::before {
   text-align: right;
   
   font-size: 90px;
-  color: rgb(192, 192, 192);
+  color: #fff;
 }
 q::after {
   content: '”';
@@ -544,12 +511,12 @@ q::after {
   margin-left: .1em;
 
   font-size: 90px;
-  color: rgb(192, 192, 192);  
+  color: #fff;
 }
 div.author {
   text-align: right;  
   font-size: 40px;
-  
+  color: #fff;
   margin-top: 20px;
   margin-right: 150px;    
 }
