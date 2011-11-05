@@ -1,9 +1,10 @@
 /*
   Google HTML5 slides template
 
-  Authors: Luke MahÃ© (code)
-           Marcin Wichary (code and design)
+  Adapted by: Zeno Rocha
 
+  Authors: Luke Mahao (code)
+           Marcin Wichary (code and design)
            Dominic Mazzoni (browser compatibility)
            Charles Chen (ChromeVox support)
 
@@ -525,23 +526,6 @@ function addEventListeners() {
 
 /* Initialization */
 
-function addPrettify() {
-  var els = document.querySelectorAll('pre');
-  for (var i = 0, el; el = els[i]; i++) {
-    if (!el.classList.contains('noprettyprint')) {
-      el.classList.add('prettyprint');
-    }
-  }
-  
-  var el = document.createElement('script');
-  el.type = 'text/javascript';
-  el.src = PERMANENT_URL_PREFIX + 'prettify.js';
-  el.onload = function() {
-    prettyPrint();
-  }
-  document.body.appendChild(el);
-};
-
 function addFontStyle() {
   var el = document.createElement('link');
   el.rel = 'stylesheet';
@@ -594,7 +578,6 @@ function handleDomLoaded() {
 
   addFontStyle();
   addGeneralStyle();
-  addPrettify();
   addEventListeners();
 
   updateSlides();

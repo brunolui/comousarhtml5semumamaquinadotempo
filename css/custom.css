@@ -110,7 +110,7 @@
 	#tudo { background: url("../Untitled-1.jpg"); }
 	#capa { background: url("../img/capa-01.jpg"); }
 	#quem-e { background: url("../img/quem-e.jpg"); }
-	#o-que-e { background: url("../img/bg-o-que-e.jpg"); }
+	
 	#w3c { background: url("../img/w3c.jpg"); }
 	#aceite { background: url("../img/aceite.jpg"); }
 	#wow { background: url("../img/wow.jpg"); }
@@ -128,7 +128,7 @@
 	#lamentando { background: url("../img/suissa/6-lamentando.jpg"); border: 3px solid #fff !important; }		
 	#vivefeliz { background: url("../img/suissa/7-vivefeliz.jpg"); border: 3px solid #fff !important; }		
 	#polyfill { background: url("../img/polyfill.jpg"); }	
-	#instrucoes { background: url("../img/instrucoes2.jpg"); }
+	#instrucoes { background: url("../img/instrucoes.jpg"); }
 	#ontem { background: url("../img/ontem2.jpg"); }
 	#hoje { background: url("../img/hoje2.jpg"); }	
 	#threejs { background: url("../img/threejs.jpg"); border: 3px solid #fff !important; }
@@ -143,7 +143,7 @@
 	#doismilevintedois { background: url("../img/2022.jpg"); }	
 	#maujorsvg { background: url("../img/maujorsvg.jpg"); }
 	#learningthreejs { background: url("../img/learningthreejs.jpg"); }
-	#polyfill-list { background: url("../img/polyfill.jpg"); }
+	#polyfill-list { background: url("../img/polyfill-list.jpg"); }
 	#css3pie { background: url("../img/css3pie.jpg"); }
 	#selectvizr { background: url("../img/selectvizr.jpg"); }
 	#modernizr { background: url("../img/modernizr.jpg"); }
@@ -159,11 +159,15 @@
 
 	#flash { background: url("../img/flash.png"); }
 	#fim { background: url("../img/fim.png"); }
+	#dowebsites { background: url("../img/dowebsites.jpg"); }
+
+	#dowebsites-url {
+		padding-left: 30px !important;
+	}
 
 	#roots { background: url("../img/roots.jpg"); }
 	#drupal { background: url("../img/drupal.jpg"); }
 	#h5bp { background: url("../img/h5bp.jpg"); }
-	#phonegap { background: url("../img/phonegap.jpg"); }
 	#faltapouco { background: url("../img/faltapouco.jpg");}
 	#faltapouco h1, #faltapouco li {
 		color: #000 !important;
@@ -202,8 +206,8 @@
 	#quemsoueu { background-color: #72a943; }
 	#armazenamento { background: #5ccedb; }
 	#acesso { background: #f7e047; }
-	#conectividade { background: #a3c4f2; }
-	#multimedia { background: #f5a35a; }
+	/*#conectividade { background: #a3c4f2; }*/
+	#multimedia { background: #a3c4f2; }
 	#graficos {	background: #85b737; }
 	#css3 {	background: #9a37b7; }	
 
@@ -239,6 +243,22 @@
 		margin: 50px 0 0 0 !important;
 		padding: 0 !important;		
 	}
+
+	#praquem {
+		top: 50px;
+	}
+
+	#usesetas {
+		top: 470px;
+	}
+
+	#versaopdf {
+		top: 530px;
+	}
+
+	#versaopdf a {
+		color: #fff !important;
+	}
 	
 	h3.acesso {
 		font-family: 'GothamUltraRegular' !important;
@@ -263,17 +283,11 @@
 		list-style: none;
 	}
 
-	.ico-html {
-		margin: 200px 0 0 250px;
-	}
-
-	.ico-css {
-		margin: 200px 0 0 100px;
-	}
-
-	.ico-js {
-		margin: 200px 0 0 100px;
-	}
+	/* slide 20 */
+	#o-que-e { background: #fff url("../img/oque-e.png"); }
+	.ico-html { position: absolute; top: 230px; left: 80px; }
+	.ico-css { position: absolute; top: 230px; left: 285px; }
+	.ico-js { position: absolute; top: 230px; left: 490px; }
 
 	article.fill h3 {
 		position: absolute;
